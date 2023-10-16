@@ -7,6 +7,13 @@
   resolved "https://registry.yarnpkg.com/@adguard/extended-css/-/extended-css-2.0.52.tgz#f5e7c3df1796deb96404a1b6441e7a4c729f09ac"
   integrity sha512-T77MnFD/+A3q93MNEq13qPUXPQRBeOUO9LRyqslcaz7jD5qMcikX1nx436u3PXdZXZpa6R0nnwXQ7wwScDmVgw==
 
+"@adguard/filters-downloader@^1.1.20":
+  version "1.1.20"
+  resolved "https://registry.yarnpkg.com/@adguard/filters-downloader/-/filters-downloader-1.1.20.tgz#f54b3a0b96e41bf73ffd910eb6d9547c821cd0b0"
+  integrity sha512-8ChY076/YOemqU/IqF5nZwH0vM486czE1gzbgAmnCMfAFQRizyRUeWR/d0LK2y7yKKuo4QikKamFY/VOLR/3hg==
+  dependencies:
+    axios "^0.21.1"
+
 "@adguard/scriptlets@^1.9.72":
   version "1.9.72"
   resolved "https://registry.yarnpkg.com/@adguard/scriptlets/-/scriptlets-1.9.72.tgz#79db94d91083b531ff83d37a97c2d608877e62f2"
@@ -70,16 +77,17 @@ acorn@^8.8.2:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.2.tgz#1b2f25db02af965399b9776b0c2c391276d37c4a"
   integrity sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==
 
-"adguard-filters-compiler@git+https://github.com/AdguardTeam/FiltersCompiler.git#v1.1.96":
-  version "1.1.96"
-  resolved "git+https://github.com/AdguardTeam/FiltersCompiler.git#11f4ad310890edce13df0b9ddedc7e0b6c2a5856"
+"adguard-filters-compiler@git+https://github.com/AdguardTeam/FiltersCompiler.git#v1.1.100":
+  version "1.1.100"
+  uid bf4e1a7cd8e1d86d61da6ac6f19407e34265e324
+  resolved "git+https://github.com/AdguardTeam/FiltersCompiler.git#bf4e1a7cd8e1d86d61da6ac6f19407e34265e324"
   dependencies:
     "@adguard/extended-css" "^2.0.52"
+    "@adguard/filters-downloader" "^1.1.20"
     "@adguard/scriptlets" "^1.9.72"
     "@adguard/tsurlfilter" "2.1.11"
     ajv "^8.11.0"
     child_process ">=1.0.2"
-    filters-downloader "git+https://github.com/AdguardTeam/FiltersDownloader.git#v1.1.12"
     jsdom "^21.1.1"
     md5 "2.3.0"
     moment "^2.29.4"
@@ -258,12 +266,6 @@ fast-levenshtein@~2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
-
-"filters-downloader@git+https://github.com/AdguardTeam/FiltersDownloader.git#v1.1.12":
-  version "1.1.12"
-  resolved "git+https://github.com/AdguardTeam/FiltersDownloader.git#cf44f54d7e3c7c1a9e60073c77a3b9cf3780b54f"
-  dependencies:
-    axios "^0.21.1"
 
 follow-redirects@^1.14.0:
   version "1.14.9"
