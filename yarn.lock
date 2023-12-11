@@ -2,25 +2,32 @@
 # yarn lockfile v1
 
 
-"@adguard/extended-css@^2.0.52":
-  version "2.0.52"
-  resolved "https://registry.yarnpkg.com/@adguard/extended-css/-/extended-css-2.0.52.tgz#f5e7c3df1796deb96404a1b6441e7a4c729f09ac"
-  integrity sha512-T77MnFD/+A3q93MNEq13qPUXPQRBeOUO9LRyqslcaz7jD5qMcikX1nx436u3PXdZXZpa6R0nnwXQ7wwScDmVgw==
+"@adguard/extended-css@^2.0.56":
+  version "2.0.56"
+  resolved "https://registry.yarnpkg.com/@adguard/extended-css/-/extended-css-2.0.56.tgz#4205287fc3e0b4dbf9f64ccad55c56a73e04cef1"
+  integrity sha512-RMPRGZ80kM6KiKRR0K2DUOD0+2CiadBk+G6zYBrRmzk4lD71Cipv2b9/rRy9Fdh41ipoApZsQdbJZozXFsM8RA==
 
-"@adguard/scriptlets@^1.9.72":
-  version "1.9.72"
-  resolved "https://registry.yarnpkg.com/@adguard/scriptlets/-/scriptlets-1.9.72.tgz#79db94d91083b531ff83d37a97c2d608877e62f2"
-  integrity sha512-4nxqXTyD+sDonMdlXchp2sxqcfafWM4RRrv13yVe9prDloWyMTd2D8z4RF65aKRodc/waW4Xe7ehvdnE94X1qg==
+"@adguard/filters-downloader@^1.1.23":
+  version "1.1.23"
+  resolved "https://registry.yarnpkg.com/@adguard/filters-downloader/-/filters-downloader-1.1.23.tgz#3b701527c67881a87a27fea658a3b24422f8b794"
+  integrity sha512-BPzcwtkjRZWb+m2XK1d/lD1qg0kYFBCuSf07y8Utv6ZMU82RcwRG3B1kLLLe+y2mOcz1VgW3tNN77dDzxgjP9A==
+  dependencies:
+    axios "^0.21.1"
+
+"@adguard/scriptlets@^1.9.101":
+  version "1.9.101"
+  resolved "https://registry.yarnpkg.com/@adguard/scriptlets/-/scriptlets-1.9.101.tgz#f18ba3b16b673790e92a6ec66977590cc619ae05"
+  integrity sha512-mqqQ57v/BRVVEYXXmWUPI2S6Fgxj1lj5pC1rA7Sde3QiLyS9CqL29yu9EydXY2QJw9eN9Xw/NsdoXaOEfSd9bA==
   dependencies:
     "@babel/runtime" "^7.20.13"
     js-yaml "^3.13.1"
 
-"@adguard/tsurlfilter@2.1.11":
-  version "2.1.11"
-  resolved "https://registry.yarnpkg.com/@adguard/tsurlfilter/-/tsurlfilter-2.1.11.tgz#9d034f556deaf4bf2bf2beed6564eb0472438f44"
-  integrity sha512-OUlwlPttBIzpjVwriMwEMdy18UnLviwMxpyJOpAKThX5NHNoIAwpT/x5PSy4z5rIln+vz+xpb5tCXD5FcQXqkg==
+"@adguard/tsurlfilter@2.2.7":
+  version "2.2.7"
+  resolved "https://registry.yarnpkg.com/@adguard/tsurlfilter/-/tsurlfilter-2.2.7.tgz#283e42fc0e13b84234a606f76ae9eab8ccbbe230"
+  integrity sha512-DgNx6yG2fkcvAMSz6CuB1dQfUiB7mrJytA3fQWYkm335V7m89RMdsORwjL/TA2cBYtNDgV3DDDvwJsy/B+/kAQ==
   dependencies:
-    "@adguard/scriptlets" "^1.9.72"
+    "@adguard/scriptlets" "^1.9.101"
     cidr-tools "^6.4.1"
     commander "9.4.1"
     is-cidr "4.0.2"
@@ -70,16 +77,17 @@ acorn@^8.8.2:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.2.tgz#1b2f25db02af965399b9776b0c2c391276d37c4a"
   integrity sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==
 
-"adguard-filters-compiler@git+https://github.com/AdguardTeam/FiltersCompiler.git#v1.1.96":
-  version "1.1.96"
-  resolved "git+https://github.com/AdguardTeam/FiltersCompiler.git#11f4ad310890edce13df0b9ddedc7e0b6c2a5856"
+"adguard-filters-compiler@git+https://github.com/AdguardTeam/FiltersCompiler.git#v1.1.119":
+  version "1.1.119"
+  uid a1e1911f74fa06c1da5a1a72329c1b9a2366ee7d
+  resolved "git+https://github.com/AdguardTeam/FiltersCompiler.git#a1e1911f74fa06c1da5a1a72329c1b9a2366ee7d"
   dependencies:
-    "@adguard/extended-css" "^2.0.52"
-    "@adguard/scriptlets" "^1.9.72"
-    "@adguard/tsurlfilter" "2.1.11"
+    "@adguard/extended-css" "^2.0.56"
+    "@adguard/filters-downloader" "^1.1.23"
+    "@adguard/scriptlets" "^1.9.101"
+    "@adguard/tsurlfilter" "2.2.7"
     ajv "^8.11.0"
     child_process ">=1.0.2"
-    filters-downloader "git+https://github.com/AdguardTeam/FiltersDownloader.git#v1.1.12"
     jsdom "^21.1.1"
     md5 "2.3.0"
     moment "^2.29.4"
@@ -258,12 +266,6 @@ fast-levenshtein@~2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
-
-"filters-downloader@git+https://github.com/AdguardTeam/FiltersDownloader.git#v1.1.12":
-  version "1.1.12"
-  resolved "git+https://github.com/AdguardTeam/FiltersDownloader.git#cf44f54d7e3c7c1a9e60073c77a3b9cf3780b54f"
-  dependencies:
-    axios "^0.21.1"
 
 follow-redirects@^1.14.0:
   version "1.14.9"
