@@ -2,25 +2,43 @@
 # yarn lockfile v1
 
 
-"@adguard/extended-css@^2.0.52":
-  version "2.0.52"
-  resolved "https://registry.yarnpkg.com/@adguard/extended-css/-/extended-css-2.0.52.tgz#f5e7c3df1796deb96404a1b6441e7a4c729f09ac"
-  integrity sha512-T77MnFD/+A3q93MNEq13qPUXPQRBeOUO9LRyqslcaz7jD5qMcikX1nx436u3PXdZXZpa6R0nnwXQ7wwScDmVgw==
+"@adguard/diff-builder@1.0.17":
+  version "1.0.17"
+  resolved "https://registry.yarnpkg.com/@adguard/diff-builder/-/diff-builder-1.0.17.tgz#d7fd5f928d75f8955668ea0f45c51ac4ef8dd03a"
+  integrity sha512-pKM8oUQcl8IrVyJIlqwiAUMX4manZrfe2S/a9Np3VDbnaQFbGTwW1cmQoKffmdFUwk7dEKzQ83ILm1OuOu6kZw==
+  dependencies:
+    commander "^11.1.0"
+    crypto-js "^4.2.0"
+    diff "git+https://github.com/105th/jsdiff.git#2be2e7df90e8eebd99f0385c7b1dc16c2f4dcc1a"
 
-"@adguard/scriptlets@^1.9.72":
-  version "1.9.72"
-  resolved "https://registry.yarnpkg.com/@adguard/scriptlets/-/scriptlets-1.9.72.tgz#79db94d91083b531ff83d37a97c2d608877e62f2"
-  integrity sha512-4nxqXTyD+sDonMdlXchp2sxqcfafWM4RRrv13yVe9prDloWyMTd2D8z4RF65aKRodc/waW4Xe7ehvdnE94X1qg==
+"@adguard/extended-css@^2.0.56":
+  version "2.0.56"
+  resolved "https://registry.yarnpkg.com/@adguard/extended-css/-/extended-css-2.0.56.tgz#4205287fc3e0b4dbf9f64ccad55c56a73e04cef1"
+  integrity sha512-RMPRGZ80kM6KiKRR0K2DUOD0+2CiadBk+G6zYBrRmzk4lD71Cipv2b9/rRy9Fdh41ipoApZsQdbJZozXFsM8RA==
+
+"@adguard/filters-downloader@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@adguard/filters-downloader/-/filters-downloader-2.2.2.tgz#ec4c9a5a2cbbaf5c3cd974c3f4b94b11b86c57a5"
+  integrity sha512-7seM81E2QvvgfgC0uiK1ayYLBuRHiRedqQO4xAwpC7x+d1UOyu+pDZxOy3eYW7TMTv+Nd8KrpINPI5RrCZbZ0w==
+  dependencies:
+    "@adguard/diff-builder" "1.0.17"
+    axios "1.6.2"
+    crypto-js "^4.2.0"
+
+"@adguard/scriptlets@^1.11.16":
+  version "1.11.16"
+  resolved "https://registry.yarnpkg.com/@adguard/scriptlets/-/scriptlets-1.11.16.tgz#7951a7dba7a7bf13af7376af2ea90975c290be27"
+  integrity sha512-E7lOVx1vgf1Pw3pGOH+bJFjluS99dGE3DZ+hqP1kn+6G1yHqHq4ofa7GnQRrVNMGJNmzOxbk6TiB5avubijhqA==
   dependencies:
     "@babel/runtime" "^7.20.13"
     js-yaml "^3.13.1"
 
-"@adguard/tsurlfilter@2.1.11":
-  version "2.1.11"
-  resolved "https://registry.yarnpkg.com/@adguard/tsurlfilter/-/tsurlfilter-2.1.11.tgz#9d034f556deaf4bf2bf2beed6564eb0472438f44"
-  integrity sha512-OUlwlPttBIzpjVwriMwEMdy18UnLviwMxpyJOpAKThX5NHNoIAwpT/x5PSy4z5rIln+vz+xpb5tCXD5FcQXqkg==
+"@adguard/tsurlfilter@2.2.23":
+  version "2.2.23"
+  resolved "https://registry.yarnpkg.com/@adguard/tsurlfilter/-/tsurlfilter-2.2.23.tgz#e0809747c4d2c9048c363a379375effef6040dde"
+  integrity sha512-Bj3IjEkmArJigHydkLFpMzwm4kJSY7ct0leRvf/AVBJ5qV7uUtusvcRSS7gtxoJQ7o9cmnyii6hl1sIT17QhvQ==
   dependencies:
-    "@adguard/scriptlets" "^1.9.72"
+    "@adguard/scriptlets" "^1.11.16"
     cidr-tools "^6.4.1"
     commander "9.4.1"
     is-cidr "4.0.2"
@@ -70,19 +88,21 @@ acorn@^8.8.2:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.2.tgz#1b2f25db02af965399b9776b0c2c391276d37c4a"
   integrity sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==
 
-"adguard-filters-compiler@git+https://github.com/AdguardTeam/FiltersCompiler.git#v1.1.96":
-  version "1.1.96"
-  resolved "git+https://github.com/AdguardTeam/FiltersCompiler.git#11f4ad310890edce13df0b9ddedc7e0b6c2a5856"
+"adguard-filters-compiler@git+https://github.com/AdguardTeam/FiltersCompiler.git#v1.1.143":
+  version "1.1.143"
+  uid "4cb3bb458d39473092b6d176aa62e16d3fe4884b"
+  resolved "git+https://github.com/AdguardTeam/FiltersCompiler.git#4cb3bb458d39473092b6d176aa62e16d3fe4884b"
   dependencies:
-    "@adguard/extended-css" "^2.0.52"
-    "@adguard/scriptlets" "^1.9.72"
-    "@adguard/tsurlfilter" "2.1.11"
+    "@adguard/extended-css" "^2.0.56"
+    "@adguard/filters-downloader" "^2.2.2"
+    "@adguard/scriptlets" "^1.11.16"
+    "@adguard/tsurlfilter" "2.2.23"
     ajv "^8.11.0"
     child_process ">=1.0.2"
-    filters-downloader "git+https://github.com/AdguardTeam/FiltersDownloader.git#v1.1.12"
     jsdom "^21.1.1"
     md5 "2.3.0"
     moment "^2.29.4"
+    tldts "^6.1.18"
     utf8 "^3.0.0"
 
 agent-base@6:
@@ -114,12 +134,14 @@ asynckit@^0.4.0:
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha1-x57Zf380y48robyXkLzDZkdLS3k=
 
-axios@^0.21.1:
-  version "0.21.4"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
-  integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==
+axios@1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.6.2.tgz#de67d42c755b571d3e698df1b6504cde9b0ee9f2"
+  integrity sha512-7i24Ri4pmDRfJTR7LDBhsOTtcm+9kjX5WiY1X3wIisx6G9So3pfMkEiU7emUBe46oceVImccTEM3k6C5dbVW8A==
   dependencies:
-    follow-redirects "^1.14.0"
+    follow-redirects "^1.15.0"
+    form-data "^4.0.0"
+    proxy-from-env "^1.1.0"
 
 charenc@0.0.2:
   version "0.0.2"
@@ -167,10 +189,20 @@ commander@9.4.1:
   resolved "https://registry.yarnpkg.com/commander/-/commander-9.4.1.tgz#d1dd8f2ce6faf93147295c0df13c7c21141cfbdd"
   integrity sha512-5EEkTNyHNGFPD2H+c/dXXfQZYa/scCKasxWcXJaWnNJ99pnQN9Vnmqow+p+PlFPE63Q6mThaZws1T+HxfpgtPw==
 
+commander@^11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-11.1.0.tgz#62fdce76006a68e5c1ab3314dc92e800eb83d906"
+  integrity sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==
+
 crypt@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/crypt/-/crypt-0.0.2.tgz#88d7ff7ec0dfb86f713dc87bbb42d044d3e6c41b"
   integrity sha512-mCxBlsHFYh9C+HVpiEacem8FEBnMXgU9gy4zmNC+SXAZNB/1idgp/aulFJ4FgCi7GPEVbfyng092GqL2k2rmow==
+
+crypto-js@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-4.2.0.tgz#4d931639ecdfd12ff80e8186dba6af2c2e856631"
+  integrity sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==
 
 cssstyle@^3.0.0:
   version "3.0.0"
@@ -209,6 +241,11 @@ delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
   integrity sha1-3zrhmayt+31ECqrgsp4icrJOxhk=
+
+"diff@git+https://github.com/105th/jsdiff.git#2be2e7df90e8eebd99f0385c7b1dc16c2f4dcc1a":
+  version "5.1.1"
+  uid "2be2e7df90e8eebd99f0385c7b1dc16c2f4dcc1a"
+  resolved "git+https://github.com/105th/jsdiff.git#2be2e7df90e8eebd99f0385c7b1dc16c2f4dcc1a"
 
 domexception@^4.0.0:
   version "4.0.0"
@@ -259,16 +296,10 @@ fast-levenshtein@~2.0.6:
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   integrity sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=
 
-"filters-downloader@git+https://github.com/AdguardTeam/FiltersDownloader.git#v1.1.12":
-  version "1.1.12"
-  resolved "git+https://github.com/AdguardTeam/FiltersDownloader.git#cf44f54d7e3c7c1a9e60073c77a3b9cf3780b54f"
-  dependencies:
-    axios "^0.21.1"
-
-follow-redirects@^1.14.0:
-  version "1.14.9"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.9.tgz#dd4ea157de7bfaf9ea9b3fbd85aa16951f78d8d7"
-  integrity sha512-MQDfihBQYMcyy5dhRDJUHcw7lb2Pv/TuE6xP1vyraLukNDHKbDxDNaOE3NbCAdKQApno+GPRyo1YAp89yCjK4w==
+follow-redirects@^1.15.0:
+  version "1.15.6"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.6.tgz#7f815c0cda4249c74ff09e95ef97c23b5fd0399b"
+  integrity sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==
 
 form-data@^4.0.0:
   version "4.0.0"
@@ -467,6 +498,11 @@ prelude-ls@~1.1.2:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
 
+proxy-from-env@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/proxy-from-env/-/proxy-from-env-1.1.0.tgz#e102f16ca355424865755d2c9e8ea4f24d58c3e2"
+  integrity sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==
+
 psl@^1.1.33:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/psl/-/psl-1.8.0.tgz#9326f8bcfb013adcc005fdff056acce020e51c24"
@@ -544,12 +580,24 @@ tldts-core@^5.6.45:
   resolved "https://registry.yarnpkg.com/tldts-core/-/tldts-core-5.7.112.tgz#168459aa79495f5d46407a685a7a9f0cdc9a272b"
   integrity sha512-mutrEUgG2sp0e/MIAnv9TbSLR0IPbvmAImpzqul5O/HJ2XM1/I1sajchQ/fbj0fPdA31IiuWde8EUhfwyldY1Q==
 
+tldts-core@^6.1.38:
+  version "6.1.38"
+  resolved "https://registry.yarnpkg.com/tldts-core/-/tldts-core-6.1.38.tgz#e8064921dc65a2c672e95db004c2f5bb0113bad0"
+  integrity sha512-TKmqyzXCha5k3WFSIW0ofB7W8BkUe1euZ1z9rZLckai5JxqndBt8CuWfusU9EB1qS5ycS+k9zf6Zs0bucKRDkg==
+
 tldts@5.6.45:
   version "5.6.45"
   resolved "https://registry.yarnpkg.com/tldts/-/tldts-5.6.45.tgz#346344ba7d0d4694c6fbaa4eeb0b485c121a1ff9"
   integrity sha512-Arp9q296eI/ALgV1QjjMstjGV18In4WkwGoiY6ZtkqOeZ0KiSLEA+LkHk3YJv2BYqTgnrPUSsSOK6d1tfcCdBA==
   dependencies:
     tldts-core "^5.6.45"
+
+tldts@^6.1.18:
+  version "6.1.38"
+  resolved "https://registry.yarnpkg.com/tldts/-/tldts-6.1.38.tgz#6a6a5ac2b5e7c0c38040e23a32598fda5a637666"
+  integrity sha512-1onihAOxYDzhsQXl9XMlDQSjdIgMAz3ugom3BdS4K71GbHmNmrRSR5PYFYIBoE4QBB0v1dPqj47D3o/2C9M+KQ==
+  dependencies:
+    tldts-core "^6.1.38"
 
 tough-cookie@^4.1.2:
   version "4.1.2"
